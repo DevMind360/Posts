@@ -1,0 +1,1 @@
+![Project thumbnail](./neanderthal.gif)
