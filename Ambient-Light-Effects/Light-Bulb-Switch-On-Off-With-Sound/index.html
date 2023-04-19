@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devmind360 - Bulb light with switch</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper-container">
+      <div class="light">
+        <div class="wire"></div>
+        <div class="bulb">
+          <span></span>
+          <span></span>
+        </div>
+        <!-- add sound light on/off  -->
+        <audio id="audio" src="./click.mp3" autostart="false"></audio>
+      </div>
+      <div class="switch">
+        <div class="btn" onclick="toggleBtn()"></div>
+      </div>
+    </div>
+    <script>
+      function toggleBtn(){
+         let container = document.querySelector('.wrapper-container');
+         let audio = document.querySelector('#audio');
+         container?.classList.toggle('on');
+         audio?.play();
+      }
+    </script>
+  </body>
+</html>
