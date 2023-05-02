@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devmind360 - Buttons 4 Hover Effects</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <button class="button effect1">
+            Effect one
+        </button>
+      
+        <button class="button effect2">
+            Effect two
+        </button>
+      
+        <button class="button effect3">
+            Effect three
+        </button>
+      
+        <button class="button effect4">
+            Effect four
+        </button>
+      
+      </div>
+    <script>
+      function toggleBtn(){
+         let container = document.querySelector('.wrapper-container');
+         let audio = document.querySelector('#audio');
+         container?.classList.toggle('on');
+         audio?.play();
+      }
+    </script>
+  </body>
+</html>
